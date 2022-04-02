@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="design.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="" alt="">
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Contact Managment</a></li>
+                <li><a href="#">Report a problem</a></li>
+            </ul>
+        </div>
+    </header>
+    <hr>
+    <div class="container">
+        <h2>Select a washing machine</h2>
+        <div class="select-box">
+          <div class="options-container">
+            <div class="option">
+              <input
+                type="radio"
+                class="radio"
+                id="automobiles"
+                name="category"
+              />
+              <label for="automobiles">Machine 1</label>
+            </div>
+  
+            <div class="option">
+              <input type="radio" class="radio" id="film" name="category" />
+              <label for="film">Machine 2</label>
+            </div>
+  
+            <div class="option">
+              <input type="radio" class="radio" id="science" name="category" />
+              <label for="science">Machine 3</label>
+            </div>
+  
+            <div class="option">
+              <input type="radio" class="radio" id="art" name="category" />
+              <label for="art">Machine 4</label>
+            </div>
+  
+            <div class="option">
+              <input type="radio" class="radio" id="music" name="category" />
+              <label for="music">Machine 5</label>
+            </div>
+  
+            <div class="option">
+              <input type="radio" class="radio" id="travel" name="category" />
+              <label for="travel">Machine 6</label>
+            </div>
+  
+            <div class="option">
+              <input type="radio" class="radio" id="sports" name="category" />
+              <label for="sports">Machine 7</label>
+            </div>
+  
+            <div class="option">
+              <input type="radio" class="radio" id="news" name="category" />
+              <label for="news">Machine 8</label>
+            </div>
+  
+            <div class="option">
+              <input type="radio" class="radio" id="tutorials" name="category" />
+              <label for="tutorials">Machine 9</label>
+            </div>
+          </div>
+  
+          <div class="selected">
+              Machine available
+          </div>
+        </div>
+      </div>
+     <button class="act">Activate the machine</button>
+      <script src="java.js"></script>
+</body>
+</html>
