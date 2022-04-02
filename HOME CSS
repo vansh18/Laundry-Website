@@ -1,0 +1,144 @@
+body{
+    font-family: 'Baloo Bhai 2', cursive;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    background:url(background.webp)
+}
+.navbar{
+    display: inline-block;
+}
+.navbar li{
+    display: inline-block;
+    font-size: 20px;
+}
+.navbar li a {
+    color: orange;
+    text-decoration: none;
+    padding: 34px 15px;
+}
+.navbar a:hover, .navbar li a.active{
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+    transform: scale(1.5);
+}
+h2 {
+    margin: 16px;
+  }
+  
+  .container {
+    margin-top: 100px;
+    padding: 32px;
+  }
+  
+  .select-box {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+  }
+  
+  .select-box .options-container {
+    background: white;
+    color: black;
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+    border-radius: 8px;
+    overflow: hidden;
+  
+    order: 1;
+  }
+  
+  .selected {
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    color: black;
+    position: relative;
+  
+    order: 0;
+  }
+  
+  .selected::after {
+    content: "";
+    background: url("arrow.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+  
+    position: absolute;
+    height: 100%;
+    width: 32px;
+    right: 10px;
+    top: 5px;
+  
+    transition: all 0.4s;
+  }
+  
+  .select-box .options-container.active {
+    max-height: 240px;
+    opacity: 1;
+    overflow-y: scroll;
+  }
+  
+  .select-box .options-container.active + .selected::after {
+    transform: rotateX(180deg);
+    top: -6px;
+  }
+  
+  .select-box .options-container::-webkit-scrollbar {
+    width: 8px;
+    background: darkgray;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .select-box .options-container::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .select-box .option,
+  .selected {
+    padding: 12px 24px;
+    cursor: pointer;
+  }
+  
+  .select-box .option:hover {
+    background: darkgray;
+    color: white;
+  }
+  
+  .select-box label {
+    cursor: pointer;
+  }
+  
+  .select-box .option .radio {
+    display: none;
+  }
+  button
+  {
+    margin-left: 200px;
+  }
+  .act
+  {
+    border: none;
+    outline: none ;
+    height: 40px;
+    background: grey;
+    border-radius: 20px;
+    color: white;
+    font-size: 19px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 0 3rem black;
+  }
+  .act:hover
+  {
+    cursor: pointer;
+    background: white ;
+    color: black;
+    font-weight: bold;
+    transform: scale(1.01);
+    box-shadow: 0 0 .5rem white;
+  }
